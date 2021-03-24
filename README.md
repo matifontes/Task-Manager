@@ -7,6 +7,10 @@ In the project directory, you can run:
 
 ### `npm install`
 
+
+### `npm install bootstrap react-bootstrap --save`
+
+
 ### `npm start`
 
 Runs the app in the development mode.\
