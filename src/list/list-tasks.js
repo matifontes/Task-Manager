@@ -41,7 +41,9 @@ function ListTasks() {
           </tr>
         </thead>
         <tbody>
-
+          <ItemsListTasks
+            tasks = {tasks}
+            reloadTasks = {setLoadTasks} />
         </tbody>
       </Table>
     </div>
