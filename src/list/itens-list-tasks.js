@@ -10,7 +10,7 @@ function ItemsListTasks(props) {
     return task.conclude ? 'line-through' : 'none';
   }
 
-  return{
+  return {
     props.tasks.map(tasks =>
       <tr key ={task.id} data-testid="task">
         <td width="75%"
@@ -21,11 +21,11 @@ function ItemsListTasks(props) {
         <td className="text-right">
           <A href={"/update/" + task.id}
             className={task.conclude ? 'hidden' : 'btn btn-warning btn-sm '}>
-            <FontAwesomeIcon icon={faEdit}>
+            <FontAwesomeIcon icon={faEdit}/>
           </A>
         </td>
       </tr>
-    );
+    )
   }
 
 }
