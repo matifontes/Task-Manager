@@ -10,8 +10,8 @@ function ItemsListTasks(props) {
     return task.conclude ? 'line-through' : 'none';
   }
 
-  return {
-    props.tasks.map(tasks =>
+  return (
+    props.tasks.map(task =>
       <tr key ={task.id} data-testid="task">
         <td width="75%"
           data-testid = "name-task"
@@ -26,7 +26,7 @@ function ItemsListTasks(props) {
         </td>
       </tr>
     )
-  }
+  );
 
 }
 
